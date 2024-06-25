@@ -20,3 +20,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//TODO: Remove hardcoded values
