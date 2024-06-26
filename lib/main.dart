@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glocery/screens/homescreen.dart';
+import 'package:glocery/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +12,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //TODO: Banner ???
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const HomePage(),
     );
   }
 }
 
-//TODO: Remove hardcoded values
+//TODO: Complete all todos
+//TODO: Reformat code
+//TODO: Remove hardcoded values,
+//TODO: Encapsulate widgets
+//TODO: Add comments wherever
+//TODO: Add icon
