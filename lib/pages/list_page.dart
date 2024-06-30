@@ -24,7 +24,7 @@ class _ListPageState extends State<ListPage> {
             Expanded(
               child: GridView.builder(
                   itemCount: 15,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
                   itemBuilder: (context, index) {
                     //TODO: Add Hive database

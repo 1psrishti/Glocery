@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 //TODO: Complete all todos
+//TODO: Check pubspec.yaml
 //TODO: Reformat code
 //TODO: Remove hardcoded values,
 //TODO: Encapsulate widgets
