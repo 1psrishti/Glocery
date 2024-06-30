@@ -19,7 +19,32 @@ class _ListPageState extends State<ListPage> {
         minimum: const EdgeInsets.only(top: 50, left: 12, right: 12),
         child: Column(
           children: [
-            TitleBar(title: "my lists"),
+            //TODO: lord help me
+            TitleBar(
+              title: "my lists",
+              alertBox:  AlertDialog(
+                title: const Text("CREATE NEW LIST"),
+                titleTextStyle: TextStyle(
+                  fontSize: 20,
+                  color: textColor,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w600,
+                ),
+                content: const Text("You have raised a Alert Dialog Box"),
+                actions: <Widget>[
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      color: Colors.green,
+                      padding: const EdgeInsets.all(14),
+                      child: const Text("okay"),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(height: 45),
             Expanded(
               child: GridView.builder(

@@ -4,8 +4,13 @@ import 'package:glocery/constants.dart';
 //TODO: also this?
 class TitleBar extends StatelessWidget {
   String title;
+  Widget alertBox;
 
-  TitleBar({required this.title, Key? key}) : super(key: key);
+  TitleBar({
+    required this.title,
+    required this.alertBox,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +26,13 @@ class TitleBar extends StatelessWidget {
           ),
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            showDialog(context: context, builder: (context){
+              return alertBox;
+            });
+          },
           icon: Image.asset(
-            "assets/images/plus-50.png",
+            "assets/images/ui/plus-50.png",
             height: size,
             width: size,
           ),

@@ -39,28 +39,28 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
               icon: Image.asset(
-                "assets/images/fridge-50.png",
+                "assets/images/ui/fridge-50.png",
                 height: size,
                 width: size,
               ),
               label: "Lists"),
           BottomNavigationBarItem(
               icon: Image.asset(
-                "assets/images/ingredients-50.png",
+                "assets/images/ui/ingredients-50.png",
                 height: size,
                 width: size,
               ),
               label: "Basket"),
           BottomNavigationBarItem(
               icon: Image.asset(
-                "assets/images/pancake-stack-50.png",
+                "assets/images/ui/pancake-stack-50.png",
                 height: size,
                 width: size,
               ),
               label: "Recipes"),
           BottomNavigationBarItem(
               icon: Image.asset(
-                "assets/images/settings-50.png",
+                "assets/images/ui/settings-50.png",
                 height: size,
                 width: size,
               ),
